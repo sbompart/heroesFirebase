@@ -1,8 +1,8 @@
 export class Heroe {
     constructor(
-      nombre: string,
-      bio: string,
-      casa: string,
-      key: string
-    ){};
+      public nombre: string,
+      public bio: string,
+      public casa: string,
+      public key?: string
+    ) { }
 }

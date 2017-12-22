@@ -1,6 +1,6 @@
-<h1>Héroe <small>nombre...</small></h1>
-<button [routerLink]="['heroes']" type="button" name="button"
-        class="btn btn-outline-danger">Atras</button>
+<h1>Héroe <small>{{ heroe.nombre}}</small></h1>
+<button [routerLink]="['heroes']" type="button" name="button" class="btn btn-outline-danger">Atras</button>
+<button (click)="agregarNuevo(forma)" type="button" class="btn btn-outline-info">Nuevo Héroe</button>
 <hr>
 
 <div class="row animated fadeIn fast">
@@ -33,8 +33,8 @@
       </div>
 
       <div class="form-group">
-        <button [disabled]="!forma.valid" (click)="guardar()"
-                type="button" class="btn btn-outline-primary" name="button">
+        <button [disabled]="!forma.valid"
+                type="submit" class="btn btn-outline-primary" name="button">
           Guardar
         </button>
 
