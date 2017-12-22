@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import { Heroe } from '../components/heroes/heroe';
 import 'rxjs/add/operator/map';
-import { resetFakeAsyncZone } from '@angular/core/testing';
 
 @Injectable()
 export class HeroesService {
